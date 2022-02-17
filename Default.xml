@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecoProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Description="Test profile" ResultThreshold="70" TestMinAmount="0">
+  <Tests>
+    <RecoTest Type="Maximum Amount" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Amount Verification" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Amount Discrepancy" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Image Quality" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Payee Verification" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Payer Verification" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Missing Signature" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Missing Endorsement" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Valid Document Type" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Date In Range" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Fraud Detection" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Check Out Of State" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Amount Not To Exceed" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Two Signatures Required" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Payable To Cash" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Payee Payer Validation" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Deposit Out of State" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Payer Black List" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Payer Suspicious" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="New Account" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Short Term Duplicate" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="PAD detection" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Account Black List" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Cash Equivalent Detection" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+    <RecoTest Type="Image Integrity" Required="false" Threshold="1" MinTestAmount="0" Weight="1" />
+  </Tests>
+  <MetaData>
+    <AllowedDocTypes>
+      <DocumentType Type="Business Check" Required="false" />
+      <DocumentType Type="Personal Check" Required="false" />
+      <DocumentType Type="Money Order" Required="false" />
+      <DocumentType Type="Traveler's Check" Required="false" />
+    </AllowedDocTypes>
+    <ValidPeriod DaysBackward="1" DaysForward="1" />
+    <NewAccountPeriod>1</NewAccountPeriod>
+    <PayerBlackLists>
+      <ListType Name="PayerBlackList" Required="false" />
+      <ListType Name="PayerWhiteList" Required="false" />
+    </PayerBlackLists>
+    <AccountBlackLists>
+      <ListType Name="AccountBlackList" Required="false" />
+      <ListType Name="AccountWhiteList" Required="false" />
+    </AccountBlackLists>
+  </MetaData>
+</RecoProfile>
